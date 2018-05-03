@@ -1,6 +1,33 @@
 # TextAlaynizer
 Membuat String jadi alay
 
+Contoh:
+ * text -> t3xt
+ * saya anak alay -> 54y4 4n4k 4l4y
+
+## Cara pakai
+Tambahkan kode di bawah pada project-level build.gradle
+```gradle
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+Tambahkan dependency pada app-level build.gradle
+```gradle
+dependencies {
+		implementation 'com.github.User:Repo:Tag'
+	}
+ ```
+ Bikin String jadi alay!
+ ```java
+String textBiasa = "Saya orang ganteng, tapi alay!";
+String textAlay = AlayHelper.alaynize(textBiasa);
+ ```
+
+## Bagian dari bahan pembelajaran untuk http://whaapps.com/
 ## Belajar cara membuat library sendiri(project library, network library dengan menggunakan jitpack.io)
  * Step 1: Buat project android seperti biasa.
  * Step 2: Buat module library dengan cara: File -> New -> New Module -> Android Library
