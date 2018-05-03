@@ -18,9 +18,9 @@ allprojects {
 Tambahkan dependency pada app-level build.gradle
 ```gradle
 dependencies {
-	implementation 'com.github.User:Repo:Tag'
+        implementation 'com.github.hendrawd:TextAlaynizer:0.0.1'
 }
- ```
+```
  Bikin String jadi alay!
  ```java
 String textBiasa = "Saya orang ganteng, tapi alay!";
