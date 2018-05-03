@@ -9,17 +9,17 @@ Contoh:
 Tambahkan kode di bawah pada project-level build.gradle
 ```gradle
 allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
 	}
+}
 ```
 Tambahkan dependency pada app-level build.gradle
 ```gradle
 dependencies {
-		implementation 'com.github.User:Repo:Tag'
-	}
+	implementation 'com.github.User:Repo:Tag'
+}
  ```
  Bikin String jadi alay!
  ```java
