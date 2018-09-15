@@ -10,7 +10,9 @@ Tambahkan kode di bawah pada project-level build.gradle
 ```gradle
 allprojects {
 	repositories {
-		...
+		jcenter()
+                // repositories yang lain...
+                // tambahkan kode di bawah ini
 		maven { url 'https://jitpack.io' }
 	}
 }
@@ -18,6 +20,7 @@ allprojects {
 Tambahkan dependency pada app-level build.gradle
 ```gradle
 dependencies {
+        // dependencies yang lain...
         implementation 'com.github.hendrawd:TextAlaynizer:0.0.1'
 }
 ```
@@ -38,7 +41,7 @@ buildscript {
 
       dependencies {
           classpath 'com.android.tools.build:gradle:x.x.x'
-	  // tambahkan line di bawah
+          // tambahkan line di bawah
           classpath 'com.github.dcendents:android-maven-gradle-plugin:x.x'
 ```          
  * Step 5: Masuk ke module-level build.gradle untuk library dan masukkan
