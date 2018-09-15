@@ -32,12 +32,13 @@ String textAlay = AlayHelper.alaynize(textBiasa);
  * Step 1: Buat project android seperti biasa.
  * Step 2: Buat module library dengan cara: File -> New -> New Module -> Android Library
  * Step 3: Buat semua fungsi/fitur yang dibutuhkan oleh library
- * Step 4: Masuk ke project-level build.gradle dan masukkan dependency 'com.github.dcendents:android-maven-gradle-plugin:x.x', dimana x.x adalah versi dependency-nya. Yang terbaru saat ini adalah 2.0
+ * Step 4: Masuk ke project-level build.gradle dan masukkan dependency **'com.github.dcendents:android-maven-gradle-plugin:x.x'**, dimana **x.x** adalah versi dependency-nya. Silakan cek versi terbaru di https://github.com/dcendents/android-maven-gradle-plugin
  ```gradle
 buildscript {
 
       dependencies {
           classpath 'com.android.tools.build:gradle:x.x.x'
+	  // tambahkan line di bawah
           classpath 'com.github.dcendents:android-maven-gradle-plugin:x.x'
 ```          
  * Step 5: Masuk ke module-level build.gradle untuk library dan masukkan
